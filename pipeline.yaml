@@ -9,6 +9,6 @@ steps:
     inputs:
       version: 8.0.x
   - pwsh: >-
-      dotnet test -c Release
+      dotnet test Tests -c Release
 
 # code: language=azure-pipelines

@@ -1,0 +1,14 @@
+name: Long PowerShell Crash Test
+appendCommitMessageToRunName: false
+
+pool:
+  vmImage: windows-2025
+
+steps:
+  - task: UseDotNet@2
+    inputs:
+      version: 8.0.x
+  - pwsh: >-
+      dotnet test -c Release
+
+# code: language=azure-pipelines
